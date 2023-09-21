@@ -20,6 +20,7 @@ def square_quad(some_num):
     result = None
     for num in range(some_num):
         result = num * num
+    print(result)
 
     return result
 
