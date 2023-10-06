@@ -7,14 +7,11 @@ class Fish(Frying):
         self.fish_type = fish_type
         self.spices = spices
 
-    def cook(self):
-        print(f"Frying {self.name}")
-
-    def is_prepared(self):
+    def done_frying(self):
         print(f"The {self.name} will be prepared when it's done frying.")
 
     def add_spices(self):
         print(f"Marinating with {self.spices}")
 
-    def all_info(self):
+    def all_fish_info(self):
         print(f"{self.name}, {self.category}, {self.fish_type}, {self.spices}")

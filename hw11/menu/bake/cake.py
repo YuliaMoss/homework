@@ -7,12 +7,9 @@ class Cake(Baking):
         self.cake_type = cake_type
         self.decorations = decorations
 
-    def cook(self):
-        print(f"Backing {self.name}")
-
-    def is_prepared(self):
+    def done_baking(self):
         print(f"The {self.name} cake is prepared and decorated.")
 
-    def all_info(self):
+    def all_cake_info(self):
         print(f"This {self.category} is {self.cake_type} and called {self.name}.")
         print(f"Decorations: {', '.join(self.decorations)}")

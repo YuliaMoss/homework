@@ -7,14 +7,11 @@ class Meat(Frying):
         self.meat_type = meat_type
         self.marinade = marinade
 
-    def cook(self):
-        print(f"Frying {self.name}")
-
-    def is_prepared(self):
+    def done_frying(self):
         print(f"The {self.meat_type} will be prepared when it's done frying.")
 
     def marinate(self):
         print(f"Marinating with {self.marinade}")
 
-    def all_info(self):
+    def all_meat_info(self):
         print(f"{self.name}, {self.category}, {self.meat_type}, {self.marinade}")

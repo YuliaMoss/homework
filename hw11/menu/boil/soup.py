@@ -7,14 +7,11 @@ class Soup(Boiling):
         self.preparation_time = preparation_time
         self.ingredients = ingredients
 
-    def cook(self):
-        print(f"Boiling {self.name}")
-
-    def is_prepared(self):
+    def done_boiling(self):
         print(f"The {self.name} is prepared when the ingredients are cooked.")
 
     def get_ingredients(self):
         print(', '.join(self.ingredients))
 
-    def all_info(self):
+    def all_soup_info(self):
         print(f"{self.name}, {self.category}, {self.preparation_time}, {self.ingredients}")

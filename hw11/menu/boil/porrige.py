@@ -7,14 +7,11 @@ class Porridge(Boiling):
         self.preparation_time = preparation_time
         self.water_level = water_level
 
-    def cook(self):
-        print(f"Boiling {self.name}")
-
-    def is_prepared(self):
+    def done_boiling(self):
         print(f"Cook {self.name} while there is water.")
 
     def get_water_level(self):
         print(f"{self.water_level}")
 
-    def all_info(self):
+    def all_porridge_info(self):
         print(f"{self.name}, {self.category}, {self.preparation_time}, {self.water_level}")

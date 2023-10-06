@@ -1,12 +1,17 @@
+from abc import ABC, abstractmethod
 from hw11.cook import Cook
 
 
-class Baking(Cook):
+class Baking(Cook, ABC):
     def __init__(self, name: str, category: str):
         super().__init__(name, category)
 
     def cook(self):
-        return "Baking"
+        print(f"Backing {self.name}")
 
-    def is_prepared(self):
-        return "The food will be prepared when it's done baking."
+    def serve(self):
+        print(f"Serving {self.name}.")
+
+    @abstractmethod
+    def done_baking(self):
+        pass

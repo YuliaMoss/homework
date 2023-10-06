@@ -11,5 +11,7 @@ class Cook(ABC):
         pass
 
     @abstractmethod
-    def is_prepared(self):
+    def serve(self):
         pass
+
+
