@@ -1,1 +1,4 @@
 .idea
+__pycache__/
+hw6/files_size.txt
+hw6/salaries_uah.csv
